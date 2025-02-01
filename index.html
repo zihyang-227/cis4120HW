@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <link href="/style.css" rel="stylesheet" />
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+      </style>
+  
+</head>
+
+<body>
+    <div id="container">
+        <img class="main-image" src="/assets/sunny.png" />
+        <div id="main-div">
+            <div class="circle"></div>
+            <h1>27°C</h1>
+            <h1>New York</h1>
+        </div>
+            <div class="info-line">
+                <h2>UVI: 0</h2>
+                <h2>WIND: 3miles/h</h2>
+                <h2>PRECIPITATION: 0.25''</h2>
+            </div>
+            <div class="info-line">
+                <h2>HUMIDITY: 73%</h2>
+                <h2>VISIBILITY: 9miles</h2>
+            </div>
+            <div class = "next-block">
+                <div class="small-block">
+                    <div><h2>19:00 🌧️</h2></div>
+                    <div><h2>20:00 🌧️</h2> </div>
+                    <div><h2>21:00 🌧️</h2> </div>
+                </div>
+                
+                <div class="small-block">
+                    <div><h2>22:00 🌧️</h2> </div>
+                    <div><h2>23:00 🌧️</h2> </div>
+                    <div><h2>24:00 🌧️</h2> </div>
+                </div>                
+
+
+            </div>
+            <div class="user">
+                <div class="toggle-btn" id="toggle-24">
+                    <img src="/assets/plus.png" class="plus-icon" id="expand-24" alt="Expand" />
+                    <h2>24-hour report</h2>
+                </div>
+                <div class="toggle-btn" id="toggle-7">
+                    <img src="/assets/plus.png" class="plus-icon" id="expand-btn" alt="Expand" />
+                    <h2>7-day report</h2>
+                </div>
+            </div>
+
+            <div id="seven-day-report" class="hidden">
+                        <h2>Monday: 🌤️25°C</h2>
+                        <h2>Tuesday: ☀️28°C</h2>
+                        <h2>Wednesday: 🌧️21°C</h2>
+                        <h2>Thursday: ⛅24°C</h2>
+                        <h2>Friday: 🌦️22°C</h2>
+                        <h2>Saturday: ☀️30°C</h2>
+                        <h2>Sunday: 🌥️27°C</h2>
+            </div>
+
+            
+
+            
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+</html>
+
+
+<script>
+document.getElementById("expand-btn").addEventListener("click", function () {
+    let report = document.getElementById("seven-day-report");
+    if (report.style.display === "none" ) {
+        report.style.display = "flex"; 
+    } else {
+        report.style.display = "none"; 
+    }
+});
+
+</script>
